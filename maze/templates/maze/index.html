@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze</title>
+</head>
+<body>
+    <h1>미궁 입장</h1>
+    <tr>
+        <td><a href="{% url 'gameover' %}">1번 문</a> </td>
+        <td><a href="{% url 'two' %}">2번 문</a> </td>
+        <td><a href="{% url 'gameover' %}">3번 문</a> </td>
+    </tr>
+</body>
+</html>
