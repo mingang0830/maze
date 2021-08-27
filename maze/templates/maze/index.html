@@ -7,12 +7,13 @@
     <meta charset="UTF-8">
     <title>Maze</title>
 </head>
+
 <body>
     <h1>미궁 입장</h1>
     <tr>
-        <td><a href="{% url 'gameover' %}">1번 문</a> </td>
-        <td><a href="{% url 'two' %}">2번 문</a> </td>
-        <td><a href="{% url 'gameover' %}">3번 문</a> </td>
+        {% for door_number in game.door %}
+        <td><a href=/maze/?floor={{game.floor}}&door={{ door_number }} >{{ door_number }}번 문 </a> </td>
+        {% endfor %}
     </tr>
 </body>
 </html>
