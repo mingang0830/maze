@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze</title>
+</head>
+
+<body>
+    <h1>미궁</h1>
+
+    <tr>
+        {% for door_number in game.door %}
+        <td><a href="/maze/game/?floor={{game.floor}}&door={{ door_number }}" >{{ door_number }}번 문 </a> </td>
+        {% endfor %}
+    </tr>
+    <br><br><br><br>
+    <div id = 'logout'><a href="{% url 'logout' %}">로그아웃하기</a></div>
+
+</body>
+</html>
