@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <h1>미궁</h1>
+    {{ error }}
+    <br><br>
+    <form action="{% url 'signup' %}" method="POST" >
+        {% csrf_token %}
+        Username:
+        <br>
+        <input name='username' type='text' >
+        <br>
+        Password:
+        <br>
+        <input name='password1' type="password" >
+        <br>
+        Confirm Password:
+        <br>
+        <input name='password2' type="password" >
+        <br>
+        <input class='btn btn-primary' type="submit" value="Sign Up!">
+        <input class='btn btn-primary' type="button" value="Cancel" onclick="location.href='/maze/'">
+    </form>
+</body>
+</html>

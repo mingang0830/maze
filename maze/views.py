@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 
 
-def index(request):
+def login(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
@@ -16,9 +16,9 @@ def index(request):
             auth.login(request, user)
             return render(request, "maze/game.html")
         else:
-            return render(request, "maze/index.html", {'error_login':"없는 회원입니다."})
+            return render(request, "maze/login.html", {'error_login':"없는 회원입니다."})
     else:
-        return render(request, 'maze/index.html')
+        return render(request, 'maze/login.html')
 
 
 def game(request):
@@ -50,7 +50,7 @@ def signup(request):
                 password=request.POST['password1']
             )
             auth.login(request, user)
-            return render(request, 'maze/index.html')
+            return render(request, 'maze/login.html')
         else:
             return render(request, 'maze/signup.html', {'error':"비밀번호가 일치하지 않습니다."})
     return render(request, 'maze/signup.html',)
@@ -59,5 +59,5 @@ def signup(request):
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
-        redirect('index')
-    return render(request, 'maze/index.html')
+        redirect('login')
+    return render(request, 'maze/login.html')

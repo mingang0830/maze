@@ -1,9 +1,7 @@
-h1 {
+body {
     text-align: center;
-#logout {
-    text-align: bottom;
-    font-size: 10;
 }
+
 a { text-decoration: none; color: white;
     background-color: black;
     padding: 15px;

@@ -11,7 +11,7 @@
 <body>
     <h1>미궁</h1>
     {{ error_login }}
-    <form action="{% url 'index' %}" method="POST" >
+    <form action="{% url 'game' %}" method="POST" >
         {% csrf_token %}
         Username:
         <br>
