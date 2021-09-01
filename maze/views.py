@@ -14,7 +14,7 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return render(request, "maze/game.html")
+            return redirect('game')
         else:
             return render(request, "maze/login.html", {'error_login':"없는 회원입니다."})
     else:
