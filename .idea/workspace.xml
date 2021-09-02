@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/modal-login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/maze.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maze.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/urls.py" afterDir="false" />
+    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maze/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +43,28 @@
       <option name="presentableId" value="Default" />
       <updated>1630459819280</updated>
     </task>
+    <task id="LOCAL-00001" summary="Maze&#10;&#10;데이타베이스 연결해서 회원가입 하면 db에 user 저장 할 수 있음.&#10;중복회원 가입 불가 설정 완료.&#10;정보 기입란이 공백이면 error메시지 띄우고 signup으로 render.">
+      <created>1630550446448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630550446448</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Maze&#10;&#10;데이타베이스 연결해서 회원가입 하면 db에 user 저장 할 수 있음.&#10;중복회원 가입 불가 설정 완료.&#10;정보 기입란이 공백이면 error메시지 띄우고 signup으로 render.">
+      <created>1630550463038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630550463038</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로...">
+      <created>1630568886614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630568886614</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -54,5 +77,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Maze&#10;&#10;데이타베이스 연결해서 회원가입 하면 db에 user 저장 할 수 있음.&#10;중복회원 가입 불가 설정 완료.&#10;정보 기입란이 공백이면 error메시지 띄우고 signup으로 render." />
+    <MESSAGE value="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로..." />
   </component>
 </project>

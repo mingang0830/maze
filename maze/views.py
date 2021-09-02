@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import authenticate, login, logout
 
 
 def signin(request):
@@ -13,10 +15,10 @@ def signin(request):
         )
 
         if user is not None:
-            auth.login(request, user)
+            login(request, user)
             return redirect('game')
         else:
-            return render(request, "maze/login.html", {'error_login': "없는 회원입니다."})
+            return render(request, "maze/login.html", {'error_login': "정확한 정보를 입력해주세요."})
     else:
         return render(request, 'maze/login.html')
 
@@ -56,8 +58,7 @@ def signup(request):
                 return render(request, 'maze/signup.html', {'error': "비밀번호가 일치하지 않습니다."})
             else:
                 user = User.objects.create_user(
-                    username,
-                    password1
+                    username=username, password=password1
                 )
                 user.save()
             return redirect('login')
