@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 
 
-def login(request):
+def signin(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
@@ -16,7 +16,7 @@ def login(request):
             auth.login(request, user)
             return redirect('game')
         else:
-            return render(request, "maze/login.html", {'error_login':"없는 회원입니다."})
+            return render(request, "maze/login.html", {'error_login': "없는 회원입니다."})
     else:
         return render(request, 'maze/login.html')
 
@@ -44,15 +44,25 @@ def game(request):
 
 def signup(request):
     if request.method == 'POST':
-        if request.POST['password1'] == request.POST['password2']:
-            user = User.objects.create_user(
-                username=request.POST['username'],
-                password=request.POST['password1']
-            )
-            auth.login(request, user)
-            return render(request, 'maze/login.html')
-        else:
-            return render(request, 'maze/signup.html', {'error':"비밀번호가 일치하지 않습니다."})
+        username = request.POST.get('username', '')
+        password1 = request.POST.get('password1', '')
+        password2 = request.POST.get('password2', '')
+        try:
+            if username == '':
+                return render(request, 'maze/signup.html', {'error': "Username을 입력해주세요."})
+            elif password1 == '':
+                return render(request, 'maze/signup.html', {'error': "비밀번호 입력해주세요."})
+            elif password1 != password2:
+                return render(request, 'maze/signup.html', {'error': "비밀번호가 일치하지 않습니다."})
+            else:
+                user = User.objects.create_user(
+                    username,
+                    password1
+                )
+                user.save()
+            return redirect('login')
+        except:
+            return render(request, 'maze/signup.html', {'error': "이미 가입된 회원입니다."})
     return render(request, 'maze/signup.html',)
 
 
