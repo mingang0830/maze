@@ -11,7 +11,7 @@
 <body>
     <h1>미궁</h1>
     {{ error_login }}
-    <form action="{% url 'game' %}" method="POST" >
+    <form action="{% url 'login' %}" method="POST" >
         {% csrf_token %}
         Username:
         <br>
@@ -21,7 +21,7 @@
         <br>
         <input name='password' type="password">
         <br><br>
-        <input type="button" value="Login" onclick="location.href='/maze/game/'">
+        <input type="submit" value="Login">
         <input type="button" value="Sign up" onclick="location.href='/maze/signup/'">
     </form>
 </body>
