@@ -13,3 +13,15 @@ class User(models.Model):
         db_table = 'user'
         verbose_name = '유저'
         verbose_name_plural = '유저'
+
+
+class Now(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    now_floor = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.now_floor
+
+    class Meta:
+        db_table = 'now'
+        verbose_name = '현재위치'

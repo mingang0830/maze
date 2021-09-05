@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로...">
+    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;view signup create_user 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630568886614</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Maze&#10;&#10;view signup create_user 수정">
+      <created>1630574342033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630574342033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +90,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maze&#10;&#10;데이타베이스 연결해서 회원가입 하면 db에 user 저장 할 수 있음.&#10;중복회원 가입 불가 설정 완료.&#10;정보 기입란이 공백이면 error메시지 띄우고 signup으로 render." />
     <MESSAGE value="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;login html 수정&#10;로그인 버튼 누르면 game으로 바로 이동하게 되는거 수정함..&#10;action도 game이 아니라 login으로..." />
+    <MESSAGE value="Maze&#10;&#10;view signup create_user 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;view signup create_user 수정" />
   </component>
 </project>
