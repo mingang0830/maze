@@ -17,7 +17,12 @@
         {% endfor %}
     </tr>
     <br><br><br><br>
+    <form action="{% url 'save' %}" method="POST" >
+        {% csrf_token %}
+        <input name="now_floor" type="hidden" value="{{game.floor}}">
+        <input value="save" type="submit">
+    </form>
+    <br><br><br>
     <div id = 'logout'><a href="{% url 'logout' %}">로그아웃하기</a></div>
-
 </body>
 </html>

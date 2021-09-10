@@ -16,8 +16,8 @@ class User(models.Model):
 
 
 class Now(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    now_floor = models.CharField(max_length=100)
+    u = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    now_floor = models.IntegerField(null=True)
 
     def __str__(self):
         return self.now_floor

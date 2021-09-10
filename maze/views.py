@@ -3,13 +3,13 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
+from .models import Now
 
 
 def signin(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
-
         user = auth.authenticate(
             request, username=username, password=password
         )
@@ -72,3 +72,20 @@ def logout(request):
         auth.logout(request)
         redirect('login')
     return render(request, 'maze/login.html')
+
+
+def save(request):
+    now_floor = 'ttt'
+    u = 2
+    Now(u, now_floor).save()
+
+    #if request.method == 'POST':
+       # now_floor = request.POST.get('now_floor')
+       # Now(now_floor).save()
+    return redirect('game')
+
+
+
+
+
+
