@@ -74,10 +74,8 @@ def signup(request):
 
 
 def logout(request):
-    if request.method == 'POST':
-        auth.logout(request)
-        redirect('login')
-    return render(request, 'maze/login.html')
+    auth.logout(request)
+    return redirect('login')
 
 
 def save(request):
