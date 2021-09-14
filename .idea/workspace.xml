@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;Field 'id' expected a number but got 'ttt'. 오류 수정중">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;Exception Type: &#9;IntegrityError&#10;Exception Value: FOREIGN KEY constraint failed 수정중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maze/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631235542624</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Maze&#10;&#10;Exception Type: &#9;IntegrityError&#10;Exception Value: FOREIGN KEY constraint failed 수정중">
+      <created>1631578893849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631578893849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +121,7 @@
     <MESSAGE value="Maze&#10;&#10;view signup create_user 수정" />
     <MESSAGE value="Maze&#10;&#10;models Now 클래스 생성(유저 현재 위치)" />
     <MESSAGE value="Maze&#10;&#10;Field 'id' expected a number but got 'ttt'. 오류 수정중" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;Field 'id' expected a number but got 'ttt'. 오류 수정중" />
+    <MESSAGE value="Maze&#10;&#10;Exception Type: &#9;IntegrityError&#10;Exception Value: FOREIGN KEY constraint failed 수정중" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;Exception Type: &#9;IntegrityError&#10;Exception Value: FOREIGN KEY constraint failed 수정중" />
   </component>
 </project>

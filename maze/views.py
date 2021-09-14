@@ -74,16 +74,16 @@ def logout(request):
 
 
 def save(request):
-        u_id = 20
+    if request.method == 'POST':
         now_floor = request.POST.get('now_floor')
-        Now(u_id, now_floor).save()
-
-    #if request.method == 'POST':
-       # now_floor = request.POST.get('now_floor')
-       # Now(now_floor).save()
+        u_id = request.user.id  # signin user 선언을 request로 가져옴
+        queryset = Now.objects.all()  # SELECT * FROM now
+        now_u_id = queryset.filter(u_id=u_id)  # 데이터 조회
+        if now_u_id:
+            now_u_id.update(now_floor=now_floor)
+        else:
+            Now(now_floor=now_floor, u_id=u_id).save()
         return redirect('game')
-
-
 
 
 
