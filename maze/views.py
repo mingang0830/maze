@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
@@ -75,14 +74,14 @@ def logout(request):
 
 
 def save(request):
-    now_floor = 'ttt'
-    u = 2
-    Now(u, now_floor).save()
+        u_id = 20
+        now_floor = request.POST.get('now_floor')
+        Now(u_id, now_floor).save()
 
     #if request.method == 'POST':
        # now_floor = request.POST.get('now_floor')
        # Now(now_floor).save()
-    return redirect('game')
+        return redirect('game')
 
 
 
