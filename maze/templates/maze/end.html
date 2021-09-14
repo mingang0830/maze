@@ -9,5 +9,12 @@
 </head>
 <body>
     <h1>탈출 성공</h1>
+    <form action="{% url 'save' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="now_floor" value=0>
+        <input type="submit" value="처음으로 돌아가기">
+    </form>
+    <br><br><br><br><br>
+    <div id = 'logout'><a href="{% url 'logout' %}">로그아웃하기</a></div>
 </body>
 </html>

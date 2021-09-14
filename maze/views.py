@@ -32,9 +32,16 @@ def game(request):
     current_floor = int(request.GET.get('floor', 0))
     next_floor = current_floor + 1
     door = int(request.GET.get('door', 0))
+    qset = Now.objects.all()
+
+    if qset.filter(u_id=request.user.id):  # now 테이블에 값이 있는지 조회
+        now_info = qset.get(u_id=request.user.id)
+        saved_floor = now_info.now_floor
+    else:
+        saved_floor = 0
 
     if current_floor == 0 and door == 0:  # 시작
-        return render(request, 'maze/game.html', {'game': game[0]})
+        return render(request, 'maze/game.html', {'game': game[saved_floor]})
     elif door == 7:  # 탈출 성공
         return render(request, 'maze/end.html')
     elif door == int(game[current_floor]['success']):  # 옳은 선택지
@@ -57,7 +64,7 @@ def signup(request):
                 return render(request, 'maze/signup.html', {'error': "비밀번호가 일치하지 않습니다."})
             else:
                 user = User.objects.create_user(
-                    username=username, password=password1
+                    username=username, password=password1성
                 )
                 user.save()
             return redirect('login')
