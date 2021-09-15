@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;save 기능 완료">
+    <list default="true" id="f1b92085-a05f-4c0d-bac9-23f8404e982c" name="Changes" comment="Maze&#10;&#10;logout 안되는거 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/templates/maze/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/maze/templates/maze/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631624872534</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Maze&#10;&#10;logout 안되는거 수정">
+      <created>1631625305137</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631625305137</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +144,7 @@
     <MESSAGE value="Maze&#10;&#10;Exception Type: &#9;IntegrityError&#10;Exception Value: FOREIGN KEY constraint failed 수정중" />
     <MESSAGE value="Maze&#10;&#10;save 누르면 now table에 u_id, now_floor INSERT 또는 UPDATE 완료" />
     <MESSAGE value="Maze&#10;&#10;save 기능 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;save 기능 완료" />
+    <MESSAGE value="Maze&#10;&#10;logout 안되는거 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maze&#10;&#10;logout 안되는거 수정" />
   </component>
 </project>

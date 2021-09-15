@@ -23,6 +23,9 @@ def signin(request):
 
 
 def game(request):
+    if request.user.id is None:
+        return redirect('login')
+
     game = [
         {'floor': 0, 'door': [1, 2, 3], 'success': 3},
         {'floor': 1, 'door': [4, 5, 6], 'success': 5},
